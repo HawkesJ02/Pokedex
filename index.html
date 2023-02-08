@@ -24,6 +24,10 @@
         <span class="ms-2">Pokedex</span>
       </a>
     </nav>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left"
+      aria-controls="offcanvasExample">
+      Button with data-bs-target
+    </button>
   </header>
   <main>
     <div class="container-fluid">
@@ -36,9 +40,27 @@
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
-      <p><small>Made with 💖 by CodeWorks</small></p>
+      <p><small>Hi</small></p>
     </div>
   </footer>
+
+
+  <!-- NOTE LEFT OFFCANVAS  -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <div class="row" id="all-pokemon">
+          <!-- <div class="col-12">
+            <button class="btn btn-outline-success w-100">Bulbasaur</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
     integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
