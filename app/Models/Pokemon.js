@@ -10,7 +10,7 @@ export class Pokemon{
   get AllPokemonTemplate(){
     return  `
     <div class="col-12">
-       <button onclick="app.pokedexController.get_pokemon_by_name(${this.number}) class="btn btn-outline-success w-100">${this.name}</button>
+       <button onclick="app.pokedexController.get_pokemon_by_url('${this.url}')" class="btn btn-outline-success w-100">${this.name}</button>
      </div>
     `
   }

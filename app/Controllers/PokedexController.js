@@ -27,6 +27,7 @@ async get_pokemon(){
 
 async get_pokemon_by_url(url){
 try {
+  console.log(url);
   await pokedexService.get_pokemon_by_url(url)
 } catch (error) {
   Pop.error(error.message)
